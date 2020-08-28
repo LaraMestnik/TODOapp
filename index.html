@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO app</title>
+</head>
+
+<body>
+    <div class="d-flex flex-row min-vh-100">
+        <aside class="min-vh-100 d-flex flex-column">
+            <div class="logo p-4 ml-4">TODO</div>
+            <div class="username ml-5 mb-5 d-flex flex-row">
+                <img src="img/usernameicon.svg" alt="username icon">
+                <a class="mt-1 ml-3" href="#">Lara Mestnik</a>
+            </div>
+            <div class="d-flex flex-column h-100 justify-content-between">
+                <div class="options">
+                    <div class="options-group w-100">
+                        <img src="img/notification.svg" alt="notification icon">
+                        <a href="#">Notifications</a>
+                    </div>
+                    <div class="options-group w-100">
+                        <img src="img/tasks.svg" alt="notification icon">
+                        <a href="#">My tasks</a>
+                    </div>
+                    <div class="options-group w-100">
+                        <img src="img/calendar.svg" alt="notification icon">
+                        <a href="#">Calendar</a>
+                    </div>
+                    <div class="options-group w-100">
+                        <img src="img/files.svg" alt="notification icon">
+                        <a href="#">Files</a>
+                    </div>
+                    <div class="options-group w-100">
+                        <img src="img/participants.svg" alt="notification icon">
+                        <a href="#">Participants</a>
+                    </div>
+
+                </div>
+                <div class="settings ml-5 mb-5 d-flex flex-row">
+                    <img src="img/settings.svg" alt="settings icon">
+                    <a class="ml-3" href="#">Settings</a>
+                </div>
+            </div>
+        </aside>
+        <main class="min-vh-100">
+            <div class="top d-flex flex-row align-items-center">
+                <img class="ml-5" src="img/notebook.png" alt="Notebook picture">
+                <div class="search">
+                    <input class="pl-2 pb-1 ml-4" type="text" value="Search for tasks">
+                    <img src="img/search.svg" alt="search icon">
+                </div>
+                <img class="addnew" src="img/addnew.svg" alt="Add new icon">
+
+            </div>
+            <div class="middle d-flex">
+                <p class="w-25">Task</p>
+                <p class="w-25">Due Date</p>
+                <p>Status</p>
+            </div>
+            <div class="bottom">
+                <div class="task-box d-flex p-2">
+                    <div class="task w-25 pl-4">
+                        <p class="font-weight-bold">Take out trash</p>
+                        <p>Me, myself and I</p>
+                    </div>
+                    <div class="due-date w-25 font-weight-bold">
+                        <p>20.8.2020</p>
+                    </div>
+                    <div class="status w-25 d-flex">
+                        <p class="mr-3 text-uppercase">Done</p>
+                        <img src="img/done.svg" alt="done icon">
+                    </div>
+                    <div class="files w-25 d-flex justify-content-end p-3 mr-4">
+                        <img src="img/filesgrey.svg" alt="files icon">
+                    </div>
+                </div>
+
+                <div class="task-box2 d-flex p-2">
+                    <div class="task w-25 pl-4">
+                        <p class="font-weight-bold">Meeting with coworkers</p>
+                        <p>Jane Doe, John Doe</p>
+                    </div>
+                    <div class="due-date w-25 font-weight-bold">
+                        <p>28.8.2020</p>
+                    </div>
+                    <div class="status w-25 d-flex">
+                        <p class="mr-3 text-uppercase">In progress</p>
+                        <img src="img/inprogress.svg" alt="inprogress icon">
+                    </div>
+                    <div class="files w-25 d-flex justify-content-end p-3 mr-4">
+                        <img src="img/filesgrey.svg" alt="files icon">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

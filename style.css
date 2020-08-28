@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+/* Color pallete*/
+:root{
+    --dark-purple: #412234;
+    --blue-jeans: #4bb3fd;
+    --ivory: #f6f7eb;
+    --amber: #ff7f11;
+    --onyx: #393e41;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #F6F7EB;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(246, 247, 235, 0.7);
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+
+aside{
+    width: 20vw;
+    background-color: var(--dark-purple);
+    color: var(--ivory);
+}
+
+aside .logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+aside .username img{
+    height: 2rem;
+    width: 2rem;
+}
+
+aside .options{
+    margin-left: 3.3rem;
+}
+
+aside .options a{
+    margin-bottom: 1rem;
+}
+
+aside .options img{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 1.1rem;
+}
+
+aside .options-group{
+    display: flex;
+    flex-direction: row;
+}
+
+aside .settings img{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+main{
+    min-width: 80vw;
+    
+}
+
+main .top{
+    min-height: 35vh;
+    min-width: 80vw;
+}
+
+main .top input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin-bottom: 1.8rem;
+    margin-top: 9rem;
+    color: rgba(57, 62, 65, 0.28);
+}
+
+main .top .search{
+    position: relative;
+}
+
+main .top .search img{
+    height: 1.3rem;
+    width: 1.3rem;
+    position: absolute;
+    z-index: 10;
+    bottom: 2.5rem;
+    right: 1rem;
+}
+
+main .top .addnew{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 32rem;
+}
+
+main .middle{
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(57, 62, 65, 0.70);
+}
+
+main .middle p:nth-child(3){
+    margin-left: -0.9rem;
+}
+
+main .bottom{
+    background-color: rgba(57, 62, 65, 0.09);
+    height: 65vh;
+    position: relative;
+}
+
+main .bottom .task-box{
+    background-color: #fff;
+    height: 5rem;
+    width: 90%;
+    border-radius: 4px;
+    z-index: 10;
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+}
+
+main .bottom .task-box2{
+    background-color: #fff;
+    height: 5rem;
+    width: 90%;
+    border-radius: 4px;
+    z-index: 10;
+    position: absolute;
+    top: 7rem;
+    left: 5%;
+}
+
+main .bottom .task p:nth-child(2){
+    font-size: 14px;
+    color: rgba(57, 62, 65, 0.37);
+}
+
+main .bottom .status p{
+   color: rgba(57, 62, 65, 0.70);
+}
+
+main .bottom .status img{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+main .bottom .files img{
+    height: 1.7rem;
+    width: 1.7rem;
+}
