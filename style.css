@@ -40,11 +40,16 @@ aside{
 aside .logo{
     font-size: 1.4rem;
     font-weight: 600;
+    margin: 2rem 0;
 }
 
 aside .username img{
     height: 2rem;
     width: 2rem;
+}
+
+aside .logo, aside .username{
+    margin-left: 2.9rem;
 }
 
 aside .options{
@@ -61,9 +66,18 @@ aside .options img{
     margin-right: 1.1rem;
 }
 
+aside .options img:hover{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 aside .options-group{
     display: flex;
     flex-direction: row;
+}
+
+aside .settings{
+    margin-bottom: 4rem;
 }
 
 aside .settings img{
@@ -71,42 +85,48 @@ aside .settings img{
     width: 1.3rem;
 }
 
+aside .settings img:hover{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 main{
-    min-width: 80vw;
-    
+    width: 80vw;
 }
 
 main .top{
-    min-height: 35vh;
-    min-width: 80vw;
+    height: 35vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main .top .notebook{
+    margin: 0 auto;
 }
 
 main .top input{
     border: none;
     border-bottom: 1px solid black;
     width: 300px;
-    margin-bottom: 1.8rem;
-    margin-top: 9rem;
+    margin: 8rem auto 0;
     color: rgba(57, 62, 65, 0.28);
 }
 
-main .top .search{
-    position: relative;
-}
-
-main .top .search img{
-    height: 1.3rem;
-    width: 1.3rem;
-    position: absolute;
-    z-index: 10;
-    bottom: 2.5rem;
-    right: 1rem;
-}
 
 main .top .addnew{
     height: 3rem;
     width: 3rem;
-    margin-left: 32rem;
+    position: absolute;
+    right: 6rem;
+}
+
+main .top .addnew:hover{
+    height: 3.1rem;
+    width: 3.1rem;
 }
 
 main .middle{
@@ -166,4 +186,109 @@ main .bottom .status img{
 main .bottom .files img{
     height: 1.7rem;
     width: 1.7rem;
+}
+
+
+/* Media Queries*/
+
+@media (max-width: 1200px){
+
+    aside .hide-on-small{
+        display: none;
+    }
+
+    aside img{
+        margin-bottom: 2rem;
+    }
+
+    aside .username img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    aside .options img{
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    aside .settings img{
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    main .top .addnew{
+        margin-left:5rem;
+    }
+
+    main .bottom .task-box{
+        height: 9rem;
+        top: 1rem;
+    }
+
+    main .bottom .task-box2{
+        height: 9rem;
+        top: 11rem;
+    }
+}
+
+@media (max-width: 1000px){
+    main .top .notebook{
+        display: none;
+    }
+    main .top input{
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 670px){
+    aside .options, aside .settings{
+        margin-left: 1.2rem !important;
+    }
+
+    aside .logo, aside .username{
+        margin: 1.4rem;
+    }
+
+    aside {
+        width: 15vw;
+    }
+
+    aside .logo{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    aside .username img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    aside .options img{
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    aside .settings img{
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+
+    main .top input{
+        width: 200px;
+    }
+
+    main .top .addnew{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    main .top .addnew:hover{
+        height: 2.1rem;
+        width: 2.1rem;
+    }
+
 }

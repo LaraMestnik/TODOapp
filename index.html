@@ -13,50 +13,46 @@
 <body>
     <div class="d-flex flex-row min-vh-100">
         <aside class="min-vh-100 d-flex flex-column">
-            <div class="logo p-4 ml-4">TODO</div>
-            <div class="username ml-5 mb-5 d-flex flex-row">
+            <div class="logo">TODO</div>
+            <div class="username mb-5 d-flex flex-row">
                 <img src="img/usernameicon.svg" alt="username icon">
-                <a class="mt-1 ml-3" href="#">Lara Mestnik</a>
+                <a class="mt-1 ml-3 hide-on-small" href="#">Lara Mestnik</a>
             </div>
             <div class="d-flex flex-column h-100 justify-content-between">
                 <div class="options">
                     <div class="options-group w-100">
-                        <img src="img/notification.svg" alt="notification icon">
-                        <a href="#">Notifications</a>
+                        <a href="#"><img src="img/notification.svg" alt="notification icon"></a>
+                        <a class="hide-on-small" href="#">Notifications</a>
                     </div>
                     <div class="options-group w-100">
-                        <img src="img/tasks.svg" alt="notification icon">
-                        <a href="#">My tasks</a>
+                        <a href=""><img src="img/tasks.svg" alt="task icon"></a>
+                        <a class="hide-on-small" href="#">My tasks</a>
                     </div>
                     <div class="options-group w-100">
-                        <img src="img/calendar.svg" alt="notification icon">
-                        <a href="#">Calendar</a>
+                        <a href=""><img src="img/calendar.svg" alt="calendar icon"></a>
+                        <a class="hide-on-small" href="#">Calendar</a>
                     </div>
                     <div class="options-group w-100">
-                        <img src="img/files.svg" alt="notification icon">
-                        <a href="#">Files</a>
+                        <a href=""><img src="img/files.svg" alt="files icon"></a>
+                        <a class="hide-on-small" href="#">Files</a>
                     </div>
                     <div class="options-group w-100">
-                        <img src="img/participants.svg" alt="notification icon">
-                        <a href="#">Participants</a>
+                        <a href=""><img src="img/participants.svg" alt="participants icon"></a>
+                        <a class="hide-on-small" href="#">Participants</a>
                     </div>
 
                 </div>
-                <div class="settings ml-5 mb-5 d-flex flex-row">
-                    <img src="img/settings.svg" alt="settings icon">
-                    <a class="ml-3" href="#">Settings</a>
+                <div class="settings ml-5 d-flex flex-row">
+                    <a href=""><img class="mr-3" src="img/settings.svg" alt="settings icon"></a>
+                    <a class="hide-on-small" href="#">Settings</a>
                 </div>
             </div>
         </aside>
         <main class="min-vh-100">
-            <div class="top d-flex flex-row align-items-center">
-                <img class="ml-5" src="img/notebook.png" alt="Notebook picture">
-                <div class="search">
-                    <input class="pl-2 pb-1 ml-4" type="text" value="Search for tasks">
-                    <img src="img/search.svg" alt="search icon">
-                </div>
-                <img class="addnew" src="img/addnew.svg" alt="Add new icon">
-
+            <div class="top">
+                <img class="notebook" src="img/notebook.png" alt="Notebook picture">
+                <input type="text" value="Search for tasks">
+                <a href="#"><img class="addnew" src="img/addnew.svg" alt="Add new icon"></a>
             </div>
             <div class="middle d-flex">
                 <p class="w-25">Task</p>
